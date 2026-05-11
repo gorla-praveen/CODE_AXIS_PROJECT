@@ -7,6 +7,9 @@ document.getElementById('password');
 const loginForm =
 document.getElementById('loginForm');
 
+const loginError =
+document.getElementById('loginError');
+
 togglePassword.addEventListener('click',()=>{
 
 const type =
@@ -27,6 +30,8 @@ loginForm.addEventListener('submit',(e)=>{
 
 e.preventDefault();
 
+loginError.style.display = "none";
+
 const email =
 document.getElementById('email').value.trim();
 
@@ -35,7 +40,10 @@ password.value.trim();
 
 if(email === '' || passwordValue === ''){
 
-alert('Please fill all fields');
+loginError.style.display = "block";
+
+loginError.innerHTML =
+"Please fill all fields";
 
 return;
 
@@ -43,12 +51,42 @@ return;
 
 if(passwordValue.length < 8){
 
-alert('Password must contain minimum 8 characters');
+loginError.style.display = "block";
+
+loginError.innerHTML =
+"Password must contain minimum 8 characters";
 
 return;
 
 }
 
-alert('Login Successful!');
+document
+.getElementById("loginLoader")
+.classList.remove("d-none");
+
+document
+.getElementById("loginText")
+.innerHTML = "Logging in...";
+
+setTimeout(()=>{
+
+document
+.getElementById("loginLoader")
+.classList.add("d-none");
+
+document
+.getElementById("loginText")
+.innerHTML = "Login Securely";
+
+Swal.fire({
+icon:'success',
+title:'Login Successful',
+text:'Welcome back to Code Axis',
+confirmButtonColor:'#4F46E5'
+});
+
+loginForm.reset();
+
+},1500);
 
 });

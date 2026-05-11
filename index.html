@@ -100,7 +100,10 @@ required
 </div>
 
 </div>
-
+<div
+class="error-message"
+id="loginError">
+</div>
 <div class="remember-box">
 
 <div class="form-check">
@@ -122,8 +125,17 @@ Forgot Password?
 
 </div>
 
-<button type="submit" class="auth-btn">
+<button type="submit" class="auth-btn" id="loginBtn">
+
+<span id="loginText">
 Login Securely
+</span>
+
+<span
+class="spinner-border spinner-border-sm d-none"
+id="loginLoader">
+</span>
+
 </button>
 
 </form>
@@ -133,6 +145,8 @@ Login Securely
 </div>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script src="assets/js/main.js"></script>
 
