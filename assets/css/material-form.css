@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(135deg, #EEF2FF, #F9FAFB);
-  font-family: 'Segoe UI', Roboto, Arial;
+  font-family: 'Inter', poppins ;
   height: 100vh;
   display: flex;
   justify-content: center;
