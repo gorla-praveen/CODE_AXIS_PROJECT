@@ -1,92 +1,39 @@
-const togglePassword =
-document.getElementById('togglePassword');
+const togglePassword = document.getElementById("togglePassword");
+  const password = document.getElementById("password");
 
-const password =
-document.getElementById('password');
+  togglePassword.addEventListener("click", function(){
 
-const loginForm =
-document.getElementById('loginForm');
+    const type = password.getAttribute("type") === "password" 
+      ? "text" 
+      : "password";
 
-const loginError =
-document.getElementById('loginError');
+    password.setAttribute("type", type);
 
-togglePassword.addEventListener('click',()=>{
+    this.innerHTML = type === "password"
+      ? '<i class="bi bi-eye-slash"></i>'
+      : '<i class="bi bi-eye"></i>';
 
-const type =
-password.getAttribute('type') === 'password'
-? 'text'
-: 'password';
+  });
 
-password.setAttribute('type',type);
+  // FORM VALIDATION
 
-togglePassword.innerHTML =
-type === 'password'
-? '<i class="bi bi-eye-slash"></i>'
-: '<i class="bi bi-eye"></i>';
+  const loginForm = document.getElementById("loginForm");
+  const passwordError = document.getElementById("passwordError");
 
-});
+  loginForm.addEventListener("submit", function(e){
 
-loginForm.addEventListener('submit',(e)=>{
+    if(password.value.length < 8){
 
-e.preventDefault();
+      e.preventDefault();
+      passwordError.style.display = "block";
 
-loginError.style.display = "none";
+    } else {
 
-const email =
-document.getElementById('email').value.trim();
+      passwordError.style.display = "none";
 
-const passwordValue =
-password.value.trim();
+      alert("Login Successful!");
 
-if(email === '' || passwordValue === ''){
+    }
+    
 
-loginError.style.display = "block";
-
-loginError.innerHTML =
-"Please fill all fields";
-
-return;
-
-}
-
-if(passwordValue.length < 8){
-
-loginError.style.display = "block";
-
-loginError.innerHTML =
-"Password must contain minimum 8 characters";
-
-return;
-
-}
-
-document
-.getElementById("loginLoader")
-.classList.remove("d-none");
-
-document
-.getElementById("loginText")
-.innerHTML = "Logging in...";
-
-setTimeout(()=>{
-
-document
-.getElementById("loginLoader")
-.classList.add("d-none");
-
-document
-.getElementById("loginText")
-.innerHTML = "Login Securely";
-
-Swal.fire({
-icon:'success',
-title:'Login Successful',
-text:'Welcome back to Code Axis',
-confirmButtonColor:'#4F46E5'
-});
-
-loginForm.reset();
-
-},1500);
-
-});
+  });

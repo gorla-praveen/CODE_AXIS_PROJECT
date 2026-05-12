@@ -1,0 +1,261 @@
+:root{
+    --primary:#4F46E5;
+    --primary-dark:#4338CA;
+    --text:#111827;
+    --muted:#6B7280;
+    --border:#E5E7EB;
+    --bg:#F5F7FF;
+    --shadow:0 12px 35px rgba(0,0,0,0.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',poppins;
+    background:linear-gradient(135deg,#EEF2FF,#F9FAFB);
+    min-height:100vh;
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.custom-navbar{
+    background:#fff;
+    padding:18px 0;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+    color:var(--primary) !important;
+    font-family:'Inter',poppins;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+.active-link{
+    color:var(--primary) !important;
+}
+
+/* MAIN SECTION */
+
+.material-section{
+    padding:80px 0;
+}
+
+/* HEADING */
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading h1{
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:15px;
+    font-family:'Poppins',sans-serif;
+}
+
+.section-heading p{
+    color:var(--muted);
+    font-size:18px;
+}
+
+/* WRAPPER */
+
+.material-wrapper{
+    display:flex;
+    justify-content:center;
+}
+
+/* CARD */
+
+.material-card{
+    width:100%;
+    max-width:650px;
+    background:#fff;
+    padding:50px;
+    border-radius:28px;
+    box-shadow:var(--shadow);
+}
+
+/* ICON */
+
+.material-icon{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#ede9fe;
+    color:var(--primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    margin-bottom:25px;
+    font-size:38px;
+}
+
+/* TITLE */
+
+.material-card h2{
+    text-align:center;
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:12px;
+    font-family:'Inter',poppins;
+}
+
+.form-subtitle{
+    text-align:center;
+    color:var(--muted);
+    margin-bottom:40px;
+}
+
+/* INPUT GROUP */
+
+.input-group-custom{
+    position:relative;
+    margin-bottom:32px;
+}
+
+.input-group-custom input{
+    width:100%;
+    height:60px;
+    border:none;
+    border-bottom:2px solid #D1D5DB;
+    background:transparent;
+    font-size:16px;
+    outline:none;
+    transition:0.3s;
+    padding:10px 0;
+}
+
+.input-group-custom label{
+    position:absolute;
+    left:0;
+    top:18px;
+    color:#6B7280;
+    pointer-events:none;
+    transition:0.3s;
+    font-size:16px;
+}
+
+/* FLOAT EFFECT */
+
+.input-group-custom input:focus,
+.input-group-custom input:valid{
+    border-color:var(--primary);
+}
+
+.input-group-custom input:focus + label,
+.input-group-custom input:valid + label{
+    top:-10px;
+    font-size:13px;
+    color:var(--primary);
+}
+
+/* PASSWORD */
+
+.password-box{
+    position:relative;
+}
+
+.toggle-password{
+    position:absolute;
+    right:0;
+    top:18px;
+    cursor:pointer;
+    color:#6B7280;
+}
+
+/* BUTTON */
+
+.btn-material{
+    width:100%;
+    height:58px;
+    border:none;
+    border-radius:16px;
+    background:var(--primary);
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+.btn-material:hover{
+    background:var(--primary-dark);
+    transform:translateY(-2px);
+}
+
+/* BOTTOM TEXT */
+
+.bottom-text{
+    text-align:center;
+    margin-top:25px;
+    color:var(--muted);
+}
+
+.bottom-text a{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+}
+
+.bottom-text a:hover{
+    color:var(--primary-dark);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .section-heading h1{
+        font-size:40px;
+    }
+
+    .material-card{
+        padding:40px 30px;
+    }
+}
+
+@media(max-width:576px){
+
+    .nav-links{
+        gap:15px;
+        font-size:14px;
+    }
+
+    .section-heading h1{
+        font-size:32px;
+    }
+
+    .material-card{
+        padding:35px 22px;
+    }
+
+    .material-card h2{
+        font-size:30px;
+    }
+}

@@ -1,0 +1,56 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',poppins;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#4F46E5,#8B5CF6);
+}
+
+.glass-card{
+  width:100%;
+  max-width:420px;
+  padding:40px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,0.2);
+  box-shadow:0 8px 32px rgba(0,0,0,0.15);
+}
+
+.glass-card h2{
+  color:#fff;
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.glass-input{
+  width:100%;
+  padding:14px;
+  margin-bottom:20px;
+  border:none;
+  outline:none;
+  border-radius:12px;
+  background:rgba(255,255,255,0.15);
+  color:#fff;
+}
+
+.glass-input::placeholder{
+  color:#eee;
+}
+
+.glass-btn{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:#fff;
+  color:#4F46E5;
+  font-weight:600;
+}

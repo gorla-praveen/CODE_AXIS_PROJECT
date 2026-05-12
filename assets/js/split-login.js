@@ -1,22 +1,19 @@
-const splitToggle = document.getElementById('splitToggle');
-const splitPassword = document.getElementById('splitPassword');
+const splitPassword = document.getElementById("splitPassword");
 
-if(splitToggle){
+const splitToggle = document.getElementById("splitToggle");
 
-splitToggle.addEventListener('click',()=>{
+splitToggle.addEventListener("click", () => {
 
-const type =
-splitPassword.getAttribute('type') === 'password'
-? 'text'
-: 'password';
+    const type =
+    splitPassword.getAttribute("type") === "password"
+    ? "text"
+    : "password";
 
-splitPassword.setAttribute('type',type);
+    splitPassword.setAttribute("type", type);
 
-splitToggle.innerHTML =
- type === 'password'
- ? '<i class="bi bi-eye-slash"></i>'
- : '<i class="bi bi-eye"></i>';
+    splitToggle.innerHTML =
+    type === "password"
+    ? '<i class="bi bi-eye-slash"></i>'
+    : '<i class="bi bi-eye"></i>';
 
 });
-
-}
