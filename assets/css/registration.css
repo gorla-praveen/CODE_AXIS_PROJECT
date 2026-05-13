@@ -476,3 +476,17 @@ body{
         font-size:13px;
     }
 }
+@media(max-width:480px){
+
+  .card,
+  .auth-card{
+    width:100%;
+    max-width:100%;
+    padding:20px;
+  }
+
+  body{
+    padding:15px;
+  }
+
+}
