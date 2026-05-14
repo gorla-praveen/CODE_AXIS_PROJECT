@@ -18,7 +18,7 @@
 }
 
 body{
-    font-family:'Inter',sans-serif;
+    font-family:'Inter',poppins;
     background:linear-gradient(135deg,#EEF2FF,#F9FAFB);
     min-height:100vh;
     overflow-x:hidden;
@@ -90,7 +90,7 @@ body{
 }
 
 .section-heading h1{
-    font-size:54px;
+    font-size:42px;
     font-weight:700;
     margin-bottom:15px;
     color:var(--text);
@@ -292,7 +292,7 @@ body{
 
 .title{
     text-align:center;
-    font-size:38px;
+    font-size:34px;
     font-weight:700;
     margin-bottom:12px;
 }
@@ -315,7 +315,7 @@ body{
 .form-control{
     height:58px;
     border-radius:14px;
-    padding-left:18px;
+    padding-left:15px;
     border:1px solid var(--border);
     transition:0.3s;
 }
