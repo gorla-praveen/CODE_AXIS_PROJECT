@@ -284,68 +284,55 @@ body{
 
 /* RESPONSIVE */
 
-@media(max-width:991px){
+@media(max-width:768px){
 
-    .image-panel{
-        min-height:400px;
-        padding:40px;
+    .section-heading h1{
+        font-size:40px;
     }
 
-    .overlay-content h1{
-        font-size:38px;
+    .selection-card{
+        margin-bottom:20px;
     }
 
-    .form-panel{
-        padding:50px 35px;
+    .register-card{
+        padding:35px;
     }
 
-    .form-panel h2{
-        font-size:34px;
+    .nav-links{
+        gap:15px;
+        font-size:14px;
     }
 }
 
 @media(max-width:576px){
 
-    body{
-        padding:15px;
+    .register-card{
+        padding:30px 22px;
     }
 
-    .split-card{
-        border-radius:20px;
+    .button-group{
+        flex-direction:column;
     }
 
-    .image-panel{
-        min-height:300px;
-        padding:25px;
+    .line{
+        width:40px;
     }
 
-    .overlay-content h1{
+    .section-heading h1{
+        font-size:32px;
+    }
+
+    .title{
         font-size:30px;
     }
 
-    .overlay-content p{
-        font-size:14px;
+    .navbar-brand{
+        font-size:24px;
     }
 
-    .form-panel{
-        padding:35px 22px;
-    }
-
-    .form-panel h2{
-        font-size:28px;
-    }
-
-    .brand-logo span{
-        font-size:22px;
-    }
-
-    .social-icons{
+    .nav-links{
         gap:12px;
-    }
-
-    .social-icons a{
-        width:46px;
-        height:46px;
+        font-size:13px;
     }
 }
 @media(max-width:480px){

@@ -290,22 +290,58 @@
 
     /* RESPONSIVE */
 
-    @media(max-width:991px){
+   @media(max-width:768px){
 
-      .left-side{
-        display:none;
-      }
-
-      .right-side{
-        padding:40px 25px;
-      }
-
-      .form-title{
-        font-size:28px;
-      }
-
+    .section-heading h1{
+        font-size:40px;
     }
-    @media(max-width:480px){
+
+    .selection-card{
+        margin-bottom:20px;
+    }
+
+    .register-card{
+        padding:35px;
+    }
+
+    .nav-links{
+        gap:15px;
+        font-size:14px;
+    }
+}
+
+@media(max-width:576px){
+
+    .register-card{
+        padding:30px 22px;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    .line{
+        width:40px;
+    }
+
+    .section-heading h1{
+        font-size:32px;
+    }
+
+    .title{
+        font-size:30px;
+    }
+
+    .navbar-brand{
+        font-size:24px;
+    }
+
+    .nav-links{
+        gap:12px;
+        font-size:13px;
+    }
+}
+@media(max-width:480px){
 
   .card,
   .auth-card{
@@ -313,6 +349,12 @@
     max-width:100%;
     padding:20px;
   }
+
+  body{
+    padding:15px;
+  }
+
+
 
   body{
     padding:15px;

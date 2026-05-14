@@ -138,11 +138,56 @@ button:active {
 }
 
 /* RESPONSIVE */
-@media(max-width: 480px) {
-  .card {
-    width: 100%;
-    padding: 22px;
-  }
+@media(max-width:768px){
+
+    .section-heading h1{
+        font-size:40px;
+    }
+
+    .selection-card{
+        margin-bottom:20px;
+    }
+
+    .register-card{
+        padding:35px;
+    }
+
+    .nav-links{
+        gap:15px;
+        font-size:14px;
+    }
+}
+
+@media(max-width:576px){
+
+    .register-card{
+        padding:30px 22px;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    .line{
+        width:40px;
+    }
+
+    .section-heading h1{
+        font-size:32px;
+    }
+
+    .title{
+        font-size:30px;
+    }
+
+    .navbar-brand{
+        font-size:24px;
+    }
+
+    .nav-links{
+        gap:12px;
+        font-size:13px;
+    }
 }
 @media(max-width:480px){
 
@@ -158,3 +203,5 @@ button:active {
   }
 
 }
+
+
