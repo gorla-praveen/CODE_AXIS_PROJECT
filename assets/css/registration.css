@@ -29,6 +29,23 @@ body{
    NAVBAR
 ========================= */
 
+
+
+.navbar-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+}
+
+.navbar-brand img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    border-radius:12px;
+}
+
+
 .custom-navbar{
     background:#fff;
     padding:18px 0;

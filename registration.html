@@ -39,7 +39,8 @@ html{
 <div class="container">
 
 <a class="navbar-brand" href="#">
-<i class="bi bi-boxes"></i> CODE AXIS
+    <img src="assets/images/logo.png" alt="Logo">
+    CODE AXIS
 </a>
 
 <div class="nav-links ms-auto">
@@ -303,11 +304,15 @@ Phone Number
 </label>
 
 <input
-type="text"
-class="form-control"
-id="phone"
-placeholder="Enter phone number"
->
+  type="tel"
+  class="form-control"
+  id="phone"
+  name="phone"
+  placeholder="Enter phone number"
+  pattern="[0-9]{10}"
+  maxlength="10"
+  required
+/>
 
 </div>
 

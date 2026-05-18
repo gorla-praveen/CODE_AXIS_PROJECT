@@ -9,6 +9,21 @@ body {
   padding: 20px;
 }
 
+.brand{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    text-align:center;
+}
+
+.brand img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    border-radius:12px;
+}
 /* CARD */
 .card {
   width: 380px;
